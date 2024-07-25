@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="paint.css" />
+    <title>Buy This Car!</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="side1"></div>
+
+      <!-- div class mainContent holds pic & text entry -->
+      <div class="mainContent">
+        <!-- div class img holds only the car pic -->
+        <div id="centerImg">
+          <div class="img">
+            <div class="sun"></div>
+            <br /><br /><br />
+
+            <!-- div class carWhole is car&wheels -->
+            <div class="carWhole">
+              <div class="carBody"></div>
+            </div>
+
+            <div class="wheelSpacing">
+              <div class="carWheels">
+                <div class="wheel1"></div>
+                <div class="wheel2"></div>
+              </div>
+            </div>
+
+            <div class="ground"></div>
+          </div>
+        </div>
+        <br />
+
+        <!-- div class entry is for h1 & login -->
+        <div class="entry">
+          <h1>
+            Do you like the car? Enter your name and email for pricing and more!
+          </h1>
+
+          <!-- div class login for the text boxes to add name and email with submit button -->
+          <div class="login">
+            <form action="./form-submitted.html">
+              <label for="">Name:</label>
+              <input type="text" />
+              <br />
+              <br />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+              <br />
+              <br />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="side2"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(18, 53, 53);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.img {
+  background-color: #69aaff;
+  height: 500px;
+  width: 700px;
+  border: black solid;
+  border-radius: 15%;
+}
+
+#centerImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.sun {
+  background-color: rgb(245, 245, 100);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.carBody {
+  background-color: rgb(146, 18, 18);
+  height: 150px;
+  width: 250px;
+}
+
+.wheel1,
+.wheel2 {
+  background-color: rgb(36, 41, 41);
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.carWheels {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-column-start: 3;
+}
+
+.wheelSpacing {
+  display: grid;
+  grid-template-columns: 20% 10% 40% 20% 20%;
+}
+
+.carWhole {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ground {
+  background-color: rgb(128, 124, 117);
+  height: 20px;
+}
+
+.side1,
+.side2 {
+  display: flex;
+  background-color: rgb(35, 110, 39);
+  height: 100%;
+}
+
+.entry {
+  text-align: center;
+  color: antiquewhite;
+}
+
+/* when screen size is at a minimum width of 768px, it should turn sidebars to rows */
+@media (min-width: 768px) {
+  .mainContent {
+    flex-direction: row;
+  }
+  .side1,
+  .side2 {
+    flex: 0 0 180px;
+  }
+}
+
+/* when screen size is at a minimum width of 768px, it should turn sidebars to rows */
+@media (min-width: 320px) {
+  .mainContent {
+    flex-direction: row;
+  }
+  .side1,
+  .side2 {
+    flex: 0 0 180px;
+  }
+}
